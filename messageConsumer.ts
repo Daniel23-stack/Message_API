@@ -2,7 +2,7 @@ import amqp from 'amqplib';
 import { Client } from 'pg';
 
 const QUEUE_NAME = 'messages';
-const DATABASE_URL = 'postgres://postgres:root1234@localhost:5432/message'; // Replace with your PostgreSQL database URL
+const DATABASE_URL = 'postgres://postgres:root1234@localhost:5432/message';
 
 async function consumeMessages() {
     try {
